@@ -11,7 +11,7 @@ def show_picture():
 
 if 'picture1' not in st.session_state:
     st.session_state.picture1 = None
+else:
+    st.button('Take picture', on_click=take_picture)
 
-
-st.button('Take picture', on_click=take_picture)
 st.button('Show picture', on_click=show_picture)
