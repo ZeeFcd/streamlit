@@ -13,8 +13,5 @@ if 'picture1' not in st.session_state:
     st.session_state.picture1 = None
 
 
-if st.session_state.cam in st.session_state:
-    st.image(st.session_state.picture1)
-
 st.button('Take picture', on_click=take_picture)
 st.button('Show picture', on_click=show_picture)
